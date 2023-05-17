@@ -18,35 +18,35 @@
         <hr>
         <div class="container mt-3">
             <div class="row">
-                <div class="col border-bottom border-right" onclick="jugar(0,0)">
+                <div class="col border-bottom border-right" id="celda00" onclick="jugar(0,0)">
                     <h1 class="text-center" id="dato00"></h1>
                 </div>
-                <div class="col border-bottom border-left border-right" onclick="jugar(0,1)">
+                <div class="col border-bottom border-left border-right" id="celda01" onclick="jugar(0,1)">
                     <h1 class="text-center" id="dato01"></h1>
                 </div>
-                <div class="col border-left border-bottom" onclick="jugar(0,2)">
+                <div class="col border-left border-bottom" id="celda02" onclick="jugar(0,2)">
                     <h1 class="text-center" id="dato02"></h1>
                 </div>
             </div>
             <div class="row">
-                <div class="col border-bottom border-top border-right" onclick="jugar(1,0)">
+                <div class="col border-bottom border-top border-right" id="celda10" onclick="jugar(1,0)">
                     <h1 class="text-center" id="dato10"></h1>
                 </div>
-                <div class="col border" onclick="jugar(1,1)">
+                <div class="col border" id="celda11" onclick="jugar(1,1)">
                     <h1 class="text-center" id="dato11"></h1>
                 </div>
-                <div class="col border-bottom border-top border-left" id="celda6" onclick="jugar(1,2)">
+                <div class="col border-bottom border-top border-left" id="celda12" onclick="jugar(1,2)">
                     <h1 class="text-center" id="dato12"></h1>
                 </div>
             </div>
             <div class="row">
-                <div class="col border-top border-right" onclick="jugar(2,0)">
+                <div class="col border-top border-right" id="celda20" onclick="jugar(2,0)">
                     <h1 class="text-center" id="dato20"></h1>
                 </div>
-                <div class="col border-left border-top border-right" onclick="jugar(2,1)">
+                <div class="col border-left border-top border-right" id="celda21" onclick="jugar(2,1)">
                     <h1 class="text-center" id="dato21"></h1>
                 </div>
-                <div class="col border-left border-top" onclick="jugar(2,2)">
+                <div class="col border-left border-top" id="celda22" onclick="jugar(2,2)">
                     <h1 class="text-center" id="dato22"></h1>
                 </div>
             </div>
@@ -55,6 +55,7 @@
         <div class="alert alert-primary" role="alert">
             Turno : <h1 id="turno" class="text-center">X</h1>
         </div>
+        <a onclick="reset()" class="btn btn-danger btn-block text-light" type="button" >Reiniciar</a>
     </div>
 
 
