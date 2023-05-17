@@ -37,7 +37,11 @@ const verificarH1 = (element, simbol, row, cell) => {
         element.innerText = simbol;
         matriz[row][cell] = simbol;
         opSymb = !opSymb
-        console.log(matriz);
+        if(opSymb){
+            turno.textContent = "X";
+        }else{
+            turno.textContent = "0";
+        }
     }
 }
 
@@ -120,11 +124,10 @@ const verificarGanador = (simbol) => {
 const jugar = (row, cell) => {
     const h1 = document.getElementById(`dato${row}${cell}`);
     if (opSymb) {
-        turno.textContent = "0";
         verificarH1(h1, "X", row, cell);
         verificarGanador('X');
     } else {
-        turno.textContent = "X";
+       
         verificarH1(h1, "0", row, cell);
         verificarGanador('0');
     }
